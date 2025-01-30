@@ -127,8 +127,9 @@ h4{
   display: flex;
   flex-direction: column;
   /* gap: 10px; */
-  width: 50%;
-  margin: 20px;
+  width: 100%;
+  margin-left: -150px;
+  /* margin: 20px; */
 }
 
 .top-stories-item{
