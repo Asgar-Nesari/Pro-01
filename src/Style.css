@@ -3,6 +3,7 @@
   margin: 0%;
   background-color: rgb(7, 7, 7);
   color: white;
+  box-sizing: border-box
 }
 .nav-bar{
   display: flex;
@@ -148,4 +149,70 @@ h4{
   width: 400px;
   height: 400px;
   border-radius: 20px;
+}
+.divider-left-item{
+  margin-left: 100px;
+}
+
+.author{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-left: -300px;
+}
+.author-sub{
+  display: flex;
+}
+
+.author-sub img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.match-overview{
+  /* display: flex; */
+  align-self: start;
+  flex-direction: column;
+  margin-left: 100px;
+}
+video{
+  height: 400px;
+  width: 600px;
+}
+
+/* slider */
+.mySlides1 {display: none}
+.slideshow-container img {background-size: cover;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin-left: -10px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
 }

@@ -41,20 +41,56 @@
     <!-- Main Part -->
     <div class="divider">
       <div class="divider-left">
-        <div>
-          <h4>Cricket , Test Match , India , Australia</h4>
-        <h1>India vs Australia:3rd Test Preview</h1>
-        <p>A comprehensive preview of the upcoming 3</p>
-        <img
-          src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_960,q_50/lsci/db/PICTURES/CMS/291100/291173.6.jpg"
-          alt=""
-        />
-        <p>India celebrates a wicket during their previous match</p>
+        <div class="divider-left-item">
+          
+            <h4>Cricket , Test Match , India , Australia</h4>
+          <h1>India vs Australia:3rd Test Preview</h1>
+          <p>A comprehensive preview of the upcoming 3</p>
+          <img
+            src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_960,q_50/lsci/db/PICTURES/CMS/291100/291173.6.jpg"
+            alt=""
+          />
+          <p>India celebrates a wicket during their previous match</p>
+
+          <div class="author">
+            <h5>March 15 , 2023</h5>
+            <div class="author-sub">
+              <img src="https://wordpresscdn.winzogames.com/prod/blog/wp-content/uploads/2022/02/03075005/cricket.jpg" alt="">
+              <div>
+                <h5>Lakshmi Nair</h5>
+              <h6>Senior Cricket Analyst</h6>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
+        <br>
+
+        <div class="match-overview">
+            <h3>MatchOverview</h3>
+            <p>The third Test between India and Australia promises to be an exciting contest as both teams are eager to gain the upper hand in the series.with the series currently tied,this match will be crucial for both teams.India ,led by Virat Kolhli,will look to capitalization on thier home advantage , while Australia , under the captaincy of pact Cummins , will aim to bounce back after thier recent defeat. </p>
+            <video src="./video/myvideo.mp4" controls></video>
+            <br>
+            <!-- slider -->
+            <div>
+              <div class="slideshow-container">
+                <div class="mySlides1">
+                  <img src="https://thumbs.dreamstime.com/b/young-conceptual-image-large-stone-shape-human-brain-conceptual-image-large-stone-shape-110748113.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides1">
+                  <img src="https://static.vecteezy.com/system/resources/previews/022/906/407/non_2x/human-brain-concepts-of-yellow-light-bulb-blasting-off-on-blue-background-creativity-of-human-3d-render-and-illustration-free-photo.jpg" style="width:100%">
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+              </div>
+            </div>
+            <br>
 
         </div>
       </div>
+
+
       <div>
         <h1>Top Stories</h1>
         <hr />
@@ -106,6 +142,7 @@
           </div>
         </div>
       </div>
+
     </div>
 
     <!-- End Part -->
@@ -318,5 +355,26 @@
         </div>
       </div>
     </div>
+
+    <script>
+      let slideIndex = [1,1];
+      let slideId = ["mySlides1"]
+      showSlides(1, 0);
+      
+      function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+      }
+      
+      function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex[no]-1].style.display = "block";  
+      }
+      </script> 
   </body>
 </html>
